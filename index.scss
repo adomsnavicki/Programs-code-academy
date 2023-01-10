@@ -1,0 +1,40 @@
+@import "scss/variables";
+@import "scss/responsive";
+@import "scss/basis";
+@import "scss/programs";
+
+.pink-color {
+  color: $color-pink;
+}
+.black-color {
+  color: $black-color;
+}
+.page-title-wrapper {
+  margin-bottom: 30px;
+}
+.bg-image {
+  @include xl {
+    flex-direction: column;
+    background-size: 70%;
+    background-position: 120% 100%;
+  }
+  @include xs {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 150px;
+    background-size: 350px;
+    background-position: 40% 100%;
+  }
+  display: flex;
+  column-gap: 10px;
+  text-decoration: none;
+  font-size: 30px;
+  padding: 30px;
+  background-image: url("banner.jpg");
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: 90% 70%;
+  background-color: white;
+}
+
+

@@ -1,0 +1,16 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+body {
+  background-color: #f2f2f2;
+  margin: 0;
+}
+.container {
+  @include sm {padding-left: 15px;
+    padding-right: 15px;}
+  max-width: 1230px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
